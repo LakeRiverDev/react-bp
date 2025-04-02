@@ -1,0 +1,19 @@
+import { createContext, useContext } from "react";
+
+const ScreenContext = createContext();
+
+export function useScreen() {
+  return useContext(ScreenContext);
+}
+
+export default ScreenContext;
+
+// import { createContext, useContext } from "react";
+
+// const ThemeContext = createContext();
+
+// export function useTheme() {
+//   return useContext(ThemeContext);
+// }
+
+// export default ThemeContext;
