@@ -156,6 +156,12 @@ export default function MainTable({ endpoint = "/transactions" }) {
       align: "left",
       sortable: false,
       filterable: false,
+      renderCell: (params) => {
+        const formattedSummary = params.value
+          .toLocaleString()
+          .replace(/\s/g, ".");
+        return formattedSummary;
+      },
       renderHeader: () => renderHeaderWithIcon("Сумма"),
     },
     {
