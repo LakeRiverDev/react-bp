@@ -22,7 +22,7 @@ export default function Description() {
     {
       icon: <Security fontSize="large" />,
       title: "Безопасность",
-      description: "Ваши данные под надежной защитой. Но это не точно :)",
+      description: "Ваши данные под надежной защитой.",
     },
     {
       icon: <SupportAgent fontSize="large" />,

@@ -276,9 +276,7 @@ export default function Control({
         <Button
           variant="outlined"
           disabled={isButtonDisabled}
-          loading={
-            addRow.isLoading || editRow.isLoading || controlQuery.isLoading
-          }
+          loading={controlQuery.isLoading}
           onClick={handleSubmit}
           size="medium"
           fullWidth
