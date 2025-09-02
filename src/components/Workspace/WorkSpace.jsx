@@ -60,6 +60,7 @@ export default function WorkSpace() {
         flexDirection: { md: "column", lg: "row", xl: "row" },
         alignItems: "center",
         height: "100%",
+        margin: "0 50px",
       }}
     >
       <Alert

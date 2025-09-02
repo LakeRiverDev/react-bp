@@ -267,7 +267,7 @@ export default function Control({
             variant="outlined"
             size="medium"
             fullWidth
-            onClick={() => delRow(initialData?.id)}
+            onClick={() => {delRow(initialData?.id); removeAny()}}
           >
             Удалить
           </Button>
