@@ -8,6 +8,7 @@ import {
   IconButton,
   BottomNavigation,
   BottomNavigationAction,
+  Badge
 } from "@mui/material";
 import {
   AutoGraph,
@@ -61,9 +62,11 @@ export default function Header() {
             }}
           >
             <AutoGraph sx={{ fontSize: "2.5rem", color: "primary.main" }} />
-            <Typography variant="h6" component="div">
+            <Badge badgeContent="beta" color="success">
+              <Typography variant="h6" component="div">
               BPlanner
             </Typography>
+            </Badge>
           </Box>
 
           <Box
